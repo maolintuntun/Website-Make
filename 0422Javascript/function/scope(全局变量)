@@ -1,0 +1,31 @@
+Some notes.
+"When we design sth outside the function, we still have access of it inside that function."
+***********************************  Example  ***********************************************************
+
+
+
+var y = 99;  // y is in global scope!!!
+
+>y
+99
+
+>function doMath(){
+ console.log(y);
+ }
+
+ >doMath()
+ 99
+
+ >function do Math(){
+ 	y = 100;        // we change y value see what happens
+ 	console.log(y); //it actually found the old one.and print.
+ }
+
+ >y             //not 100 as y is defined 99 as a global variable outside. inside don't change y
+ 99
+
+ >doMath()      //but inside y changed ,then the function result changed
+ 100
+
+ >y
+ 100            //this is a new y
