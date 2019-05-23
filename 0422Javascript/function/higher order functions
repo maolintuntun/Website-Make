@@ -1,0 +1,15 @@
+
+we can pass functions to other functions.
+
+"Time it out Function"( set a function launched every x seconds)
+
+ function sing(){
+	console.log("twinkle twinkle");
+	console.log("how i wonder");
+}
+
+Template
+setInterval(anotherFunc, interval) // interval is the interval time 间隔时间
+
+>setInterval(sing, 1000);  //1000 ms = 1s
+                          // setInterval call sing, and sing print two console
