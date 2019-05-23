@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Demo</title>
+</head>
+<body>
+<p>Do you prefer cats or dogs?</p>
+<form>
+	<label for="dogs">Dogs: </label>
+	<input id="dogs" name="Petchoice" type="radio" value="Dogs">
+
+	<label for="cats">Cats: </label>
+	<input id="cats" name="Petchoice" type="radio" value="Cats"> <!--正是因为有name的限定，猫和狗属于一个标签下面 所以不能两个都选 -->
+	<p>What is your pet's mood?</p>
+	<select name="mood">              <!--下拉栏-->
+		<option value="blue">:(</option>
+		<option value="red">:)</option>
+		<option value="green">:|</option> <!--Value可以省略 value相当于后面这个符号在地址栏显示的缩写-->
+	</select>
+
+	<textarea name="paragraph" rows="10" cols="50"></textarea>  <!--评论框 通过在里面输入长宽来定义框的大小--> 
+
+
+	<button>Go!</button>
+	
+</form>
+
+</body>
+</html>

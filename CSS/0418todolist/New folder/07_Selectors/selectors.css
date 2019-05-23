@@ -1,0 +1,49 @@
+/*Element*/
+li {
+   color:blue;
+}
+/*class*/
+.hello {
+   border-color:yellow;
+   background:pink;
+}
+/*id*/
+#name {
+
+    border:3px dashed purple;
+    background: rgba(100,200,40,.5);
+}
+
+/*Star: means all the element includes bullets,ul,li,h1,h4 all selects*/
+
+/** {
+	border: 1px solid lightgrey;
+}*/
+
+/*Descendant Selector: all the 超链接 in all lists*/
+
+li a {
+	color: red;
+}
+
+/*Adjacent Selector :choose all the ul element that next to h4 */  
+
+h4 + ul {
+	border: 4px solid rgba(255,150,40,.2);
+}
+
+
+/*Attribute Selector :choose certain 超链接 anchor*/
+
+a[href="http://www.facebook.com"] {
+	background: rgb(99,200,180);
+
+}
+
+/*nth of type*/ 
+/*odd:all the chosen one is the odd one in its list*/
+/* also can write in li:nth-of-type(2) means all the second one in its list(all lists)*/
+
+li:nth-of-type(2){
+	background: purple;
+}

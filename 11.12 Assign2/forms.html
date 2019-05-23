@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+	<h1> Login </h1>
+<form action="http://www.wikipedia.org">  <!-- 这个form用来把这一块和随后的文字分隔开成两段--> <!-- action 可写可不写 写了会定向到一个网址 但是 账号密码还是会显示在地址栏 ***记住http一定不能忘记否则不会有转到-->
+	<label for="username">Email:</label>
+	<input id="username" type="email"     placeholder="email" required>   <!-- placeholder用来标记框内灰色文字备注  2.如果不加input name="username" 则地址栏不会有显示你输入的账号密码
+     3.required是用来保证这个格子不为空-->
+	<label for="password">Password:</label>
+	<input id="password" type="password" placeholder="password" required>
+    <input type="Submit">  <!--这里也可以写<button>Submit</button> 第二种记住是type不是name-->
+</form>
+    
+</body>
+</html>

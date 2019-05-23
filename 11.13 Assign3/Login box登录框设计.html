@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录框设计</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<p>
+		<label for="First Name">First Name:</label>
+		<input id="first name" type="text" placeholder="John" required>
+
+		<label for="Last Name">Last Name:</label>
+		<input id="last name" type="text" placeholder="Smith" required>
+		</p>
+
+		<div> <!--也可以用div-->
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="GenderChoice" value="male">
+
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="GenderChoice" value="female">
+
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="GenderChoice" value="other">
+		</div>
+
+
+		<div>
+		<label for="Email">Email:</label>
+		<input name="email" type="email" placeholder="your email" required>
+
+		<label for="Password">Password:</label>
+		<input name="password" type="password" minlength="5" maxlength="10" placeholder="your password" required>
+			
+		</div>
+
+		<p>
+			Birthday: <!--不妥-->
+			<!-- <label>
+				    Birthday: 
+			-->
+			<select name="month">
+				<option value="Month">Month</option>
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+				<option value="Jun">Jun</option>
+				<option value="Jul">Jul</option>
+				<option value="Aug">Aug</option>
+				<option value="Sept">Sept</option>
+				<option value="Oct">Oct</option>
+				<option value="Nov">Nov</option>
+				<option value="Dec">Dec</option>
+			</select>
+
+			<select name="day">
+				<option value="Day">Day</option>
+				<option value="Jan">1</option>
+				<option value="Feb">2</option>
+				<option value="Mar">3</option>
+				<option value="April">4</option>
+				<option value="May">5</option>
+				<option value="Jun">6</option>
+				<option value="Jul">7</option>
+			</select>
+				
+		
+			<select name="year">
+				<option value="year">Year</option>
+				<option value="Jan">1990</option>
+				<option value="Feb">1992</option>
+				<option value="Mar">1999</option>
+				
+			</select>
+
+
+		</p>
+
+		<p>
+			I agree to the terms and conditions <!--这样写不太妥当 -->
+			<!--  
+			<label for="agreed">I agree for xxxx</label> 
+		    -->
+			<input type="checkbox"> <!-- 
+			<input id="agreed" name="agreed" type="checkbox"> 
+		    -->
+		</p>
+		<button>Submit</button> <!--或者 
+		<input type="submit"> 
+	    -->
+
+	</form>
+
+</body>
+</html>
