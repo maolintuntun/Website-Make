@@ -1,5 +1,9 @@
 Some notes.
+
 "When we design sth outside the function, we still have access of it inside that function."
+
+"Every variable has its own scope,and they are not shared between functions.
+
 ***********************************  Example  ***********************************************************
 
 
