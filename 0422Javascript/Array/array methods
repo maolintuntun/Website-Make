@@ -1,4 +1,4 @@
-Push and Pop || Shift and Unshift
+Push and Pop || Shift and Unshift || indexOf
 
 ***** Use push to add to the end of an array:
 
@@ -31,3 +31,13 @@ colors.shift();
 
 //shift() also returns the removed element
 var col = colors.shift();  //orange
+
+
+******* Use indexOf() to find the index of an item in an array
+
+var colors = ["red", "orange", "yellow"];
+//return the first index at which a given element can be found
+colors.indexOf("orange"); //1
+
+//returns -1 if the element is not present.
+colors.indexOf("Hagrid"); //-1
