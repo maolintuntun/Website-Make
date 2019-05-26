@@ -1,4 +1,5 @@
-Push and Pop
+Push and Pop || Shift and Unshift
+
 ***** Use push to add to the end of an array:
 
 var colors = ["red", "orange", "yellow"];
@@ -13,3 +14,20 @@ colors.pop();
 
 //pop() returns the removed element
 var col = colors.pop();  //orange
+
+
+
+****** Use unshift to add to the front of an array
+
+var colors = ["red", "orange", "yellow"];
+colors.unshift("infrared")
+//["infrared","red", "orange", "yellow"]
+
+****** Use shift to remove the first item in an array
+
+var colors = ["red", "orange", "yellow"];
+colors.shift();
+//["orange", "yellow"]
+
+//shift() also returns the removed element
+var col = colors.shift();  //orange
