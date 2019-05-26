@@ -1,0 +1,35 @@
+
+Arrays
+group data together in lists
+
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+
+index begins from 0 to 3. Every slot has a corresponding number
+
+console.log(friends[2]);
+>David
+
+****** Update arrays *****
+
+friends[0] = "Arthur";
+
+****** Add new data ******
+
+friends[4] = "Amelie";
+
+****** Initialize an empty array ******
+// two ways
+var friends = [ ]; //no friends
+var friends = new Array() //uncommon
+
+//Arrays can hold any type of data
+var random_collection = [49, true, "Hermione"];
+
+//Arrays have a length 
+var nums = [45,37,89,24];
+nums.length = 4;
+nums[2] = 89;
+
+var name = "Rusty"
+name.length = 5;
+name[4] = "y";
