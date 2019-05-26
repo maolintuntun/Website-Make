@@ -1,4 +1,4 @@
-Push and Pop || Shift and Unshift || indexOf
+Push and Pop || Shift and Unshift || indexOf || Slice
 
 ***** Use push to add to the end of an array:
 
@@ -41,3 +41,14 @@ colors.indexOf("orange"); //1
 
 //returns -1 if the element is not present.
 colors.indexOf("Hagrid"); //-1
+
+****** Use slice() to copy parts of an array
+
+var nums = [1,2,3,"a","b",445,34]
+                   ↑       ↑
+                   3       5
+
+var letters = nums.slice(3,5)
+
+> letters
+["a","b"]
