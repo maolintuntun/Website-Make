@@ -3,4 +3,57 @@ About the keyword "this"
 we implement the example in chrome console.
 
 1. this.html
-2. 
+2. Open console and test
+
+var comments = {};
+undefined
+
+comments.data = ["Good Job!", "Bye", "Lame..."]
+(3) ["Good Job!", "Bye", "Lame..."]
+------------------------------------------------------
+comments
+{data: Array(3)}data: (3) ["Good Job!", "Bye", "Lame..."]0: "Good Job!"1: "Bye"2: "Lame..."length: 3__proto__: Array(0)__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+function print(arr){
+    arr.forEach(function(el){
+        console.log(el);
+    });
+}
+---------------------------------------------
+
+print(comments.data);
+Good Job!
+Bye
+Lame...
+----------------------------------------------
+comments.print = function print(arr){
+    arr.forEach(function(el){
+        console.log(el);
+    });
+}
+ƒ print(arr){
+    arr.forEach(function(el){
+        console.log(el);
+    });
+}
+------------------------------------------------------------------------------------------------
+// this refer to comments
+comments.print = function(){
+    this.data.forEach(function(el){
+        console.log(el);
+    });
+}
+
+/*ƒ (){
+    this.data.forEach(function(el){
+        console.log(el);
+    });
+}*/
+---------------------------------------------------------------------------------------------------
+comments
+{data: Array(3), print: ƒ}data: (3) ["Good Job!", "Bye", "Lame..."]print: ƒ ()__proto__: Object
+
+comments.print()
+Good Job!
+Bye
+Lame...
+
