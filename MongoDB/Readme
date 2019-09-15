@@ -1,3 +1,19 @@
 Sept 14. 
    Today I learned what is database, what's difference between SQL and NoSQL, one has interface but the other doesn't. In the later learning,
    I will use MongoDB as a NoSQL.MongoDB is widely used with Express, Node, Angular, etc. 
+   
+   Mongo Commands
+   mongod
+   mongo
+   help
+   show dbs
+   use
+   insert
+   find
+   update
+   remove
+   
+   #CRUD
+   Create.  
+   Update.
+   Delete
